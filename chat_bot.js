@@ -14,17 +14,13 @@ const client = new Client({
     },
     puppeteer: {
         headless: true,
-        // CAMINHO OBRIGATÓRIO PARA O CHROME NO RAILWAY
-        executablePath: '/usr/bin/google-chrome',
+        // REMOVEMOS o executablePath fixo para o Buildpack gerenciar
         args: [
             '--no-sandbox',
             '--disable-setuid-sandbox',
             '--disable-dev-shm-usage',
-            '--disable-accelerated-2d-canvas',
-            '--no-first-run',
-            '--no-zygote',
             '--single-process',
-            '--disable-gpu'
+            '--no-zygote'
         ]
     }
 });
