@@ -14,7 +14,8 @@ const client = new Client({
     },
     puppeteer: {
         headless: true,
-        // ARGUMENTOS OBRIGATÓRIOS PARA RODAR NO RAILWAY/LINUX:
+        // CAMINHO OBRIGATÓRIO PARA O CHROME NO RAILWAY
+        executablePath: '/usr/bin/google-chrome',
         args: [
             '--no-sandbox',
             '--disable-setuid-sandbox',
