@@ -1,0 +1,11 @@
+# Node
+node_modules/
+
+# Environment
+.env
+
+# WhatsApp Web JS auth
+.wwwebjs_auth/
+.wwwebjs_auth/session/
+node_modules
+git status
